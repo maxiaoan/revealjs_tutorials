@@ -1,49 +1,129 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/sky.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				$$
+				\arctan x-\frac{1}{2} \arccos x \frac{2 x}{1+x^{2}}=\frac{\pi}{4}
+				$$
+			</section>
+			<section >
+		
+				$$
+				\text { (1) } \int_{0}^{\frac{\pi}{2}} \sin ^{n} x \mathrm{d} x=\int_{0}^{\frac{\pi}{2}} \cos ^{n} x
+				\mathrm{d} x=\left\{\begin{array}{c}
+				{\frac{n-1}{n} \frac{n-3}{n-2} \cdots \frac{1}{2} \frac{\pi}{2}} \\
+				{\frac{n-1}{n} \frac{n-3}{n-2} \cdots \frac{2}{3},}
+				\end{array}\right.
+				$$
+				## markdown二级标题
+				
+			</section>
+			<section>
+				<h1>Geogebra</h1>
+				<ul>
+					<li>小数数学</li>
+					<li>初中数学</li>
+					<li>高中数学</li>
+					<li>高等数学</li>
+				</ul>
+				<p>Geogebra tools for Math</p>
+			</section>
+			<section>
+				不错的工具，值得推荐
+				<!-- `$$ J(\theta_0,\theta_1) = \sum_{i=0} $$` -->
+			</section>
+			<section>
+				<section>竖直方向</section>
+				<section>竖直方向</section>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+						## Page title
+				
+						A paragraph with some text and a [link](http://hakim.se).
+					</textarea>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+
+			math: {
+				mathjax: './node_modules/mathJax/tex-svg.js',
+				config: 'TeX-AMS_HTML-full'
+			},
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js' },
+				{ src: 'plugin/math/math.js', async: true }
+			],
+
+			// ...
+
+			// The "normal" size of the presentation, aspect ratio will be preserved
+			// when the presentation is scaled to fit different resolutions. Can be
+			// specified using percentage units.
+			width: 960,
+			height: 700,
+
+			// Factor of the display size that should remain empty around the content
+			margin: 0.1,
+
+			// Bounds for smallest/largest possible scale to apply to content
+			minScale: 0.2,
+			maxScale: 1.5
+		});
+		// Turn autoSlide off
+		Reveal.configure({ autoSlide: 0 });
+
+		// Start auto-sliding every 5s
+		Reveal.configure({ autoSlide: 5000 });
+	</script>
+	<script>
+		MathJax = {
+			loader: {
+				load: ['input/tex-base', 'output/svg', 'ui/menu', '[tex]/require']
+			},
+			tex: {
+				packages: ['base', 'require']
+			}
+		};
+	</script>
+</body>
+
 </html>
