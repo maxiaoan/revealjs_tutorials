@@ -28,23 +28,23 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-
-				<pre><code class="hljs" data-line-numbers="4,8-11" style="text-align: center;">
-					import random    
-					if __name__ =="__main__":    #四位数字字母验证码的生成
-						checkcode="" #保存验证码的变量
-						for i in range(4):
-							index=random.randrange(0,4)  #生成一个0~3中的数
-							if index!=i and index +1 !=i:
-								checkcode +=chr(random.randint(97,122))  # 生成a~z中的一个小写字母
-							elif index +1==i:
-								checkcode +=chr(random.randint(65,90) ) # 生成A~Z中的一个大写字母
-							else:
-								checkcode +=str(random.randint(1,9))  # 数字1-9
-						print(checkcode)
-				</code></pre>
-
-				</section>
+<pre><code class="hljs" data-line-numbers="4,8-11">
+	import React, { useState } from 'react';
+		
+	function Example() {
+		const [count, setCount] = useState(0);
+		
+		return (
+		<div>
+			<p>You clicked {count} times</p>
+			<button onClick={() => setCount(count + 1)}>
+			Click me
+			</button>
+		</div>
+		);
+	}
+	</code></pre>
+			</section>
 			<section>
 				$$
 				\arctan x-\frac{1}{2} \arccos x \frac{2 x}{1+x^{2}}=\frac{\pi}{4}
@@ -59,8 +59,7 @@
 				{\frac{n-1}{n} \frac{n-3}{n-2} \cdots \frac{2}{3},}
 				\end{array}\right.
 				$$
-				## markdown二级标题
-
+				
 			</section>
 			<section>
 				<h1>Geogebra</h1>
@@ -99,7 +98,7 @@
 		Reveal.initialize({
 
 			math: {
-				mathjax: './node_modules/mathJax/tex-svg.js',
+				mathjax: 'plugin/math/tex-svg.js',
 				config: 'TeX-AMS_HTML-full'
 			},
 			dependencies: [
