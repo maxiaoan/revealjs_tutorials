@@ -28,12 +28,30 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
+
+				<pre><code class="hljs" data-line-numbers="4,8-11" style="text-align: center;">
+					import random    
+					if __name__ =="__main__":    #四位数字字母验证码的生成
+						checkcode="" #保存验证码的变量
+						for i in range(4):
+							index=random.randrange(0,4)  #生成一个0~3中的数
+							if index!=i and index +1 !=i:
+								checkcode +=chr(random.randint(97,122))  # 生成a~z中的一个小写字母
+							elif index +1==i:
+								checkcode +=chr(random.randint(65,90) ) # 生成A~Z中的一个大写字母
+							else:
+								checkcode +=str(random.randint(1,9))  # 数字1-9
+						print(checkcode)
+				</code></pre>
+
+				</section>
+			<section>
 				$$
 				\arctan x-\frac{1}{2} \arccos x \frac{2 x}{1+x^{2}}=\frac{\pi}{4}
 				$$
 			</section>
-			<section >
-		
+			<section>
+
 				$$
 				\text { (1) } \int_{0}^{\frac{\pi}{2}} \sin ^{n} x \mathrm{d} x=\int_{0}^{\frac{\pi}{2}} \cos ^{n} x
 				\mathrm{d} x=\left\{\begin{array}{c}
@@ -42,7 +60,7 @@
 				\end{array}\right.
 				$$
 				## markdown二级标题
-				
+
 			</section>
 			<section>
 				<h1>Geogebra</h1>
