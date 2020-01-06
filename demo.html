@@ -6,8 +6,8 @@
 
 		<title>reveal.js – The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Revealjs demo">
+		<meta name="author" content="Maxiaoan>
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -16,7 +16,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -29,10 +29,6 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
 	</head>
 
 	<body>
@@ -45,10 +41,46 @@
 					<h1>Reveal.js</h1>
 					<h3>The HTML Presentation Framework</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
+						<small>Created by <a href="https://www.maxiaoan.com">马小安</a> and <a href="https://github.com/maxiaoan/revealjs_tutorials">模板创建者</a></small>
 					</p>
 				</section>
-
+				<section>
+					$$
+					\arctan x-\frac{1}{2} \arccos x \frac{2 x}{1+x^{2}}=\frac{\pi}{4}
+					$$
+				</section>
+				<section>
+	
+					$$
+					\text { (1) } \int_{0}^{\frac{\pi}{2}} \cos ^{n} x
+					\mathrm{d} x=\left\{\begin{array}{c}
+					{\frac{n-1}{n} \frac{n-3}{n-2} \cdots \frac{1}{2} \frac{\pi}{2}} \\
+					{\frac{n-1}{n} \frac{n-3}{n-2} \cdots \frac{2}{3},}
+					\end{array}\right.
+					$$
+					$$
+					\text { (2) } \int_{0}^{\frac{\pi}{2}} \sin ^{n} x \mathrm{d} x=\\
+					\left\{\begin{array}{c}
+					{\frac{n-1}{n} \frac{n-3}{n-2} \cdots \frac{1}{2} \frac{\pi}{2}} \\
+					{\frac{n-1}{n} \frac{n-3}{n-2} \cdots \frac{2}{3},}
+					\end{array}\right.
+					$$
+					
+				</section>
+				<section>
+					<h1>Geogebra</h1>
+					<ul>
+						<li>小数数学</li>
+						<li>初中数学</li>
+						<li>高中数学</li>
+						<li>高等数学</li>
+					</ul>
+					<p>Geogebra tools for Math</p>
+				</section>
+				<section>
+					不错的工具，值得推荐
+					<!-- `$$ J(\theta_0,\theta_1) = \sum_{i=0} $$` -->
+				</section>
 				<section>
 					<h2>Hello There</h2>
 					<p>
@@ -64,7 +96,7 @@
 						<p>Use the <em>Space</em> key to navigate through all slides.</p>
 						<br>
 						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+							<img width="178" height="238" data-src="img/arrow.png" alt="Down arrow">
 						</a>
 					</section>
 					<section>
@@ -76,7 +108,7 @@
 						<p>That's it, time to go back up.</p>
 						<br>
 						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+							<img width="178" height="238" data-src="img/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
 						</a>
 					</section>
 				</section>
@@ -102,7 +134,7 @@
 				</section>
 
 				<section>
-					<h2>Touch Optimized</h2>
+					<h2>触摸屏的优化</h2>
 					<p>
 						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
 					</p>
@@ -110,7 +142,7 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						## Markdown support
+						## 支持markdown语法
 
 						Write content using inline or external Markdown.
 						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
@@ -194,24 +226,27 @@
 							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
 						</p>
 						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+							<img width="178" height="238" data-src="img/arrow.png" alt="Down arrow">
 						</a>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+					<section data-background="img/image-placeholder.png">
 						<h2>Image Backgrounds</h2>
 						<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+					<section data-background="img/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
 						<h2>Tiled Backgrounds</h2>
 						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
 					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+					<section data-background-video="video/cloud-studio.mp4" data-background-color="#f4f4f4">
+						<div>
+							<!-- <h5>Video Backgrounds</h5> -->
+							<!-- <pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre> -->
 						</div>
 					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+					<section data-background="img/background.gif">
+						<h2>... and GIFs!</h2>
+					</section>
+					<section data-background="img/yyp.gif">
 						<h2>... and GIFs!</h2>
 					</section>
 				</section>
@@ -232,8 +267,8 @@
 					<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
 				</section>
 
-				<section data-background-iframe="https://hakim.se" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+				<section data-background-iframe="https://www.icourse163.org" data-background-interactive>
+					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
 						<h2>Iframe Backgrounds</h2>
 						<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the page in the background.</p>
 					</div>
@@ -341,7 +376,7 @@ function Example() {
 				<section>
 					<h2>Export to PDF</h2>
 					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					<!-- <iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> -->
 				</section>
 
 				<section>
@@ -405,7 +440,10 @@ Reveal.addEventListener( 'customevent', function() {
 				progress: true,
 				center: true,
 				hash: true,
-
+				math: {
+				mathjax: 'plugin/math/tex-svg.js',
+				config: 'TeX-AMS_HTML-full'
+			},
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
@@ -415,7 +453,8 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/highlight/highlight.js', async: true },
 					{ src: 'plugin/search/search.js', async: true },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
 				]
 			});
 
